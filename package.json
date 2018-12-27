@@ -1,0 +1,26 @@
+{
+  "name": "brianbe-website",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "10.8.0"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bebrian458/brianbe-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bebrian458/brianbe-website/issues"
+  },
+  "homepage": "https://github.com/bebrian458/brianbe-website#readme"
+}
