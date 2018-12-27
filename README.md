@@ -7,3 +7,11 @@
 1. Protect Master branch
 
 More to come...
+
+### Custom Domain Name
+
+To connect google's dns to heroku domain
+- add subdomain forward (with @ as the subdomain)
+- use CNAME and heroku domain
+
+Watch this [video](https://www.youtube.com/watch?v=SCE5LPPcma0) for more info.
