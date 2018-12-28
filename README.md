@@ -15,3 +15,10 @@ To connect google's dns to heroku domain
 - use CNAME and heroku domain
 
 Watch this [video](https://www.youtube.com/watch?v=SCE5LPPcma0) for more info.
+
+### Git Commands
+
+Remove a commit:
+```
+$ git reset --hard HEAD^
+```
