@@ -4,7 +4,11 @@
   "description": "Personal Website",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "check-pretty": "prettier --list-different 'app/**/*.js'",
+    "pretty": "prettier --write 'app/**/*.js'",
+    "check-lint": "eslint '*.js'",
+    "lint": "eslint --fix '*.js'"
   },
   "engines": {
     "node": "10.8.0"
@@ -13,14 +17,25 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bebrian458/brianbe-website.git"
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bebrian458/brianbe-website/issues"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": [
+        "npm run check-pretty",
+        "npm run check-lint"
+      ]
+    }
   },
-  "homepage": "https://github.com/bebrian458/brianbe-website#readme"
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
