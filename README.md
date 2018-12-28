@@ -22,3 +22,8 @@ Remove a commit:
 ```
 $ git reset --hard HEAD^
 ```
+
+Removing a remote-branch:
+```
+$ git remote prune origin
+```
