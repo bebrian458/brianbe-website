@@ -1,14 +1,39 @@
 # Personal Website
 
 ### Tasks
-1. Set up auto deploy to heroku - checked
-1. Set up heroku pipeline - checked
-1. Set up Circle CI
-    1. husky (pre-commit, pre-push)
-    1. lint
-1. Protect Master branch
 
-More to come...
+#### Overview
+- github
+- about me
+- profile pic
+#### Projects/Experience
+- Gifs on hover
+- Mobile
+    - TopGoaler
+- Webdev
+    - Saarchasm
+    - A Hitchhiker's Guide to Machine Learning
+    - AASC website
+    - Personal Website
+    - Food Blog?
+- Unity
+    - Survival Shooter
+    - Space Wars
+#### Hobbies
+- Music Editing
+- Food Blog/Culinary Arts (link to website)?
+- Worship Leader (Guitar, vocal arrangements)
+#### Resume 
+- PDF
+
+#### Designs
+1. Simple, sleek navbar
+    - each page dedicated to subject
+1. Single page scroller
+    - banners/sections
+    - dots/arrows for side scrolling previews
+    - product style
+1. Parallax background
 
 ### Custom Domain Name
 
