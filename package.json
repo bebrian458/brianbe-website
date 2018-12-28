@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "check-pretty": "prettier --list-different 'app/**/*.js'",
-    "pretty": "prettier --write 'app/**/*.js'",
+    "pretty": "prettier --write '*.js'",
     "check-lint": "eslint '*.js'",
     "lint": "eslint --fix '*.js'"
   },
@@ -25,7 +25,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "npm run pretty && lint-staged",
       "pre-push": [
         "npm run check-pretty",
         "npm run check-lint"
