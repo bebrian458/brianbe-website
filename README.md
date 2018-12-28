@@ -8,7 +8,7 @@
     1. lint
 1. Protect Master branch
 
-More to come...test...
+More to come...
 
 ### Custom Domain Name
 
