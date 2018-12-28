@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "check-pretty": "prettier --list-different 'app/**/*.js'",
+    "check-pretty": "prettier --list-different '*.js'",
     "pretty": "prettier --write '*.js'",
     "check-lint": "eslint '*.js'",
     "lint": "eslint --fix '*.js'"
